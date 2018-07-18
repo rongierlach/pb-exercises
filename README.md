@@ -18,25 +18,27 @@ Install git:
 
 https://git-scm.com/downloads
 
-Install virtualenv:
+Install nodeenv:
 
-    $ pip install virtualenv
+    $ pip install nodeenv
 
 # Download pb-exercises requirements
 
-    $ git clone https://github.com/jimmysong/pb-exercises
+    $ git clone https://github.com/rongierlach/pb-exercises
     $ cd pb-exercises
-    $ virtualenv -p python3 .venv
+    $ nodeenv --requirements=requirements.txt --node=8.11.3 --force .venv
 
 Linux/OSX:
 
     $ . .venv/bin/activate
-    (.venv) $ pip install -r requirements.txt
+    (.venv) $ npm install -g ijavascript
+    (.venv) $ ijsinstall
 
 Windows:
 
     > .venv\Scripts\activate.bat
-    > pip install -r requirements.txt
+    > npm install -g ijavascript
+    > ijsinstall
 
 # Run jupyter notebook
 
